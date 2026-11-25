@@ -1,0 +1,68 @@
+{
+  "run_date": "2026-11-23",
+  "model": "qwen3:0.6b",
+  "model_digest": "7df6b6e09427a769808717c0a93cadc4ae99ed4eb8bf5ca557c90846becea435",
+  "matched_fields": [
+    "model",
+    "model_digest",
+    "prompt",
+    "system_prompt",
+    "think",
+    "options"
+  ],
+  "only_experimental_difference": "MCP tool definitions and a live MCP client were available only in with_mcp.",
+  "trials_per_condition": 1,
+  "reference": {
+    "area": "United States",
+    "change_usd_per_gallon": -0.261,
+    "crosses_2018_method_change": true,
+    "dollar_basis": "nominal",
+    "end_price": 2.168,
+    "end_year": 2020,
+    "grade": "regular",
+    "methodology_note": "EIA changed gasoline survey methods on May 14, 2018. Comparisons spanning that change are descriptive, not method-constant.",
+    "percent_change": -10.7452,
+    "series_id": "EMM_EPMR_PTE_NUS_DPG",
+    "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+    "start_price": 2.429,
+    "start_year": 2015,
+    "units": "USD per gallon, including taxes"
+  },
+  "observations": {
+    "without_mcp": {
+      "prices": [
+        3.5,
+        3.75
+      ],
+      "reported_change": 0.25,
+      "reported_percent": 10,
+      "actual_tool_calls": 0,
+      "matches_eia": false,
+      "comment": "Wrong prices and direction; claimed 10% also disagrees with 0.25/3.50 (7.14%)."
+    },
+    "with_mcp": {
+      "prices": [
+        3.59,
+        3.85
+      ],
+      "reported_change": 0.26,
+      "reported_percent": 4.8,
+      "actual_tool_calls": 0,
+      "matches_eia": false,
+      "comment": "Tool names appeared in response text, not structured calls; 4.8% also disagrees with 0.26/3.59 (7.24%)."
+    },
+    "earlier_guided_mcp": {
+      "prices": [
+        2.429,
+        2.168
+      ],
+      "reported_change": -0.261,
+      "reported_percent": -10.75,
+      "actual_tool_calls": 3,
+      "matches_eia": true,
+      "matched_pair": false,
+      "comment": "Earlier troubleshooting run used a more explicit tool-specific system prompt and a different user prompt; cannot isolate MCP effect."
+    }
+  },
+  "limitations": "One pair and one earlier demonstration; no accuracy rate, model ranking, or isolated causal improvement is established."
+}

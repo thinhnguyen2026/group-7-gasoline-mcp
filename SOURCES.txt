@@ -1,0 +1,30 @@
+GROUP 7 GASOLINE PROJECT DATA SOURCES
+
+Publisher: U.S. Energy Information Administration (EIA), U.S. Department of Energy.
+Series: EMM_EPMR_PTE_NUS_DPG.
+Title: U.S. Regular All Formulations Retail Gasoline Prices.
+Frequency: Annual. Geography: United States.
+Scope used in this project: 2010-2025, 16 annual observations.
+Units: U.S. dollars per gallon, including taxes, nominal (not inflation-adjusted).
+
+Annual observations:
+https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG
+
+Definitions and annual-averaging notes:
+https://www.eia.gov/dnav/pet/TblDefs/pet_pri_gnd_tbldef2.asp
+
+2018 methodology change:
+https://www.eia.gov/petroleum/gasdiesel/gas_proc-methods.php
+
+Accessed November 4, 2026. The source page displays a November 3, 2026 release date.
+The raw source pages, extracted JSON, and provenance are included in code/data/.
+The published annual averages are simple averages of the weekly estimates.
+EIA changed gasoline survey methods on May 14, 2018. Comparisons spanning that
+change are descriptive comparisons of published estimates, not a constant-method
+study. The project does not establish causes of price changes.
+
+2015: 2.429 USD/gallon. 2020: 2.168 USD/gallon.
+Our calculation: (2.168 - 2.429) = -0.261 USD/gallon.
+Our percentage calculation: ((2.168 - 2.429) / 2.429) * 100 = -10.7452%,
+rounded to a 10.75% decrease. The percentage is derived, not an additional EIA
+observation. Redis holds calculated comparisons from the same source records.

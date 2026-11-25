@@ -1,0 +1,337 @@
+{
+  "test": "Sourced EIA observations, REST and MCP; no LLM",
+  "checks": [
+    {
+      "tool": "get_gasoline_price",
+      "arguments": {
+        "year": 2015
+      },
+      "rest": {
+        "area": "United States",
+        "dollar_basis": "nominal",
+        "formulation": "all",
+        "frequency": "annual",
+        "grade": "regular",
+        "includes_taxes": true,
+        "price_usd_per_gallon": 2.429,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "year": 2015
+      },
+      "mcp": {
+        "area": "United States",
+        "dollar_basis": "nominal",
+        "formulation": "all",
+        "frequency": "annual",
+        "grade": "regular",
+        "includes_taxes": true,
+        "price_usd_per_gallon": 2.429,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "year": 2015
+      },
+      "equal": true,
+      "source_or_arithmetic_verified": true
+    },
+    {
+      "tool": "get_gasoline_price",
+      "arguments": {
+        "year": 2020
+      },
+      "rest": {
+        "area": "United States",
+        "dollar_basis": "nominal",
+        "formulation": "all",
+        "frequency": "annual",
+        "grade": "regular",
+        "includes_taxes": true,
+        "price_usd_per_gallon": 2.168,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "year": 2020
+      },
+      "mcp": {
+        "area": "United States",
+        "dollar_basis": "nominal",
+        "formulation": "all",
+        "frequency": "annual",
+        "grade": "regular",
+        "includes_taxes": true,
+        "price_usd_per_gallon": 2.168,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "year": 2020
+      },
+      "equal": true,
+      "source_or_arithmetic_verified": true
+    },
+    {
+      "tool": "get_gasoline_price",
+      "arguments": {
+        "year": 2016
+      },
+      "rest": {
+        "area": "United States",
+        "dollar_basis": "nominal",
+        "formulation": "all",
+        "frequency": "annual",
+        "grade": "regular",
+        "includes_taxes": true,
+        "price_usd_per_gallon": 2.143,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "year": 2016
+      },
+      "mcp": {
+        "area": "United States",
+        "dollar_basis": "nominal",
+        "formulation": "all",
+        "frequency": "annual",
+        "grade": "regular",
+        "includes_taxes": true,
+        "price_usd_per_gallon": 2.143,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "year": 2016
+      },
+      "equal": true,
+      "source_or_arithmetic_verified": true
+    },
+    {
+      "tool": "compare_gasoline_prices",
+      "arguments": {
+        "start_year": 2015,
+        "end_year": 2020
+      },
+      "rest": {
+        "area": "United States",
+        "change_usd_per_gallon": -0.261,
+        "crosses_2018_method_change": true,
+        "dollar_basis": "nominal",
+        "end_price": 2.168,
+        "end_year": 2020,
+        "grade": "regular",
+        "methodology_note": "EIA changed gasoline survey methods on May 14, 2018. Comparisons spanning that change are descriptive, not method-constant.",
+        "percent_change": -10.7452,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "start_price": 2.429,
+        "start_year": 2015,
+        "units": "USD per gallon, including taxes"
+      },
+      "mcp": {
+        "area": "United States",
+        "change_usd_per_gallon": -0.261,
+        "crosses_2018_method_change": true,
+        "dollar_basis": "nominal",
+        "end_price": 2.168,
+        "end_year": 2020,
+        "grade": "regular",
+        "methodology_note": "EIA changed gasoline survey methods on May 14, 2018. Comparisons spanning that change are descriptive, not method-constant.",
+        "percent_change": -10.7452,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "start_price": 2.429,
+        "start_year": 2015,
+        "units": "USD per gallon, including taxes"
+      },
+      "equal": true,
+      "source_or_arithmetic_verified": true
+    },
+    {
+      "tool": "compare_gasoline_prices",
+      "arguments": {
+        "start_year": 2020,
+        "end_year": 2015
+      },
+      "rest": {
+        "area": "United States",
+        "change_usd_per_gallon": 0.261,
+        "crosses_2018_method_change": true,
+        "dollar_basis": "nominal",
+        "end_price": 2.429,
+        "end_year": 2015,
+        "grade": "regular",
+        "methodology_note": "EIA changed gasoline survey methods on May 14, 2018. Comparisons spanning that change are descriptive, not method-constant.",
+        "percent_change": 12.0387,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "start_price": 2.168,
+        "start_year": 2020,
+        "units": "USD per gallon, including taxes"
+      },
+      "mcp": {
+        "area": "United States",
+        "change_usd_per_gallon": 0.261,
+        "crosses_2018_method_change": true,
+        "dollar_basis": "nominal",
+        "end_price": 2.429,
+        "end_year": 2015,
+        "grade": "regular",
+        "methodology_note": "EIA changed gasoline survey methods on May 14, 2018. Comparisons spanning that change are descriptive, not method-constant.",
+        "percent_change": 12.0387,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "start_price": 2.168,
+        "start_year": 2020,
+        "units": "USD per gallon, including taxes"
+      },
+      "equal": true,
+      "source_or_arithmetic_verified": true
+    },
+    {
+      "tool": "compare_gasoline_prices",
+      "arguments": {
+        "start_year": 2015,
+        "end_year": 2015
+      },
+      "rest": {
+        "area": "United States",
+        "change_usd_per_gallon": 0.0,
+        "crosses_2018_method_change": false,
+        "dollar_basis": "nominal",
+        "end_price": 2.429,
+        "end_year": 2015,
+        "grade": "regular",
+        "methodology_note": "Same side of the 2018 methodology change",
+        "percent_change": 0.0,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "start_price": 2.429,
+        "start_year": 2015,
+        "units": "USD per gallon, including taxes"
+      },
+      "mcp": {
+        "area": "United States",
+        "change_usd_per_gallon": 0.0,
+        "crosses_2018_method_change": false,
+        "dollar_basis": "nominal",
+        "end_price": 2.429,
+        "end_year": 2015,
+        "grade": "regular",
+        "methodology_note": "Same side of the 2018 methodology change",
+        "percent_change": 0.0,
+        "series_id": "EMM_EPMR_PTE_NUS_DPG",
+        "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+        "start_price": 2.429,
+        "start_year": 2015,
+        "units": "USD per gallon, including taxes"
+      },
+      "equal": true,
+      "source_or_arithmetic_verified": true
+    },
+    {
+      "invalid_arguments": {
+        "year": "bad"
+      },
+      "status": 400
+    },
+    {
+      "invalid_arguments": {},
+      "status": 400
+    },
+    {
+      "invalid_arguments": {
+        "year": "2026"
+      },
+      "status": 400
+    },
+    {
+      "invalid_arguments": {
+        "start_year": "2015",
+        "end_year": "bad"
+      },
+      "status": 400
+    },
+    {
+      "write_request": "http://127.0.0.1:5001/prices",
+      "status": 405
+    },
+    {
+      "write_request": "http://127.0.0.1:5002/compare",
+      "status": 405
+    },
+    {
+      "tool": "get_gasoline_price",
+      "arguments": {
+        "year": 2026
+      },
+      "mcp_error": true
+    },
+    {
+      "tool": "compare_gasoline_prices",
+      "arguments": {
+        "start_year": 2015,
+        "end_year": 1900
+      },
+      "mcp_error": true
+    },
+    {
+      "tool": "unsupported_tool",
+      "arguments": {},
+      "mcp_error": true
+    }
+  ],
+  "tools": [
+    {
+      "name": "get_gasoline_price",
+      "title": null,
+      "description": "Get the EIA-published annual U.S. regular gasoline price for one year.\n\n    year must be 2010 through 2025. Values are nominal USD per gallon,\n    include taxes, and cover all formulations. Calls the MongoDB service.\n    Use this tool for each year's source observation, not calculated changes.\n    ",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "year": {
+            "title": "Year",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "year"
+        ],
+        "title": "get_gasoline_priceArguments"
+      },
+      "execution": null,
+      "output_schema": {
+        "additionalProperties": true,
+        "title": "get_gasoline_priceDictOutput",
+        "type": "object"
+      },
+      "icons": null,
+      "annotations": null,
+      "meta": null
+    },
+    {
+      "name": "compare_gasoline_prices",
+      "title": null,
+      "description": "Get the cached dollar and percentage change in EIA regular gasoline prices.\n\n    Both years must be 2010 through 2025. Redis stores calculations from the\n    published observations. Percentage change uses start_year as the baseline.\n    A result spanning 2018 includes an EIA methodology-change caution.\n    ",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "start_year": {
+            "title": "Start Year",
+            "type": "integer"
+          },
+          "end_year": {
+            "title": "End Year",
+            "type": "integer"
+          }
+        },
+        "required": [
+          "start_year",
+          "end_year"
+        ],
+        "title": "compare_gasoline_pricesArguments"
+      },
+      "execution": null,
+      "output_schema": {
+        "additionalProperties": true,
+        "title": "compare_gasoline_pricesDictOutput",
+        "type": "object"
+      },
+      "icons": null,
+      "annotations": null,
+      "meta": null
+    }
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,16 @@
+{
+  "publisher": "U.S. Energy Information Administration",
+  "series_id": "EMM_EPMR_PTE_NUS_DPG",
+  "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?f=A&n=PET&s=EMM_EPMR_PTE_NUS_DPG",
+  "notes_url": "https://www.eia.gov/dnav/pet/TblDefs/pet_pri_gnd_tbldef2.asp",
+  "source_snapshot_sha256": "522d024b01e670d6cd9ff778a78c0c7213e3f164b223c79ee3bb930511b6bf4b",
+  "extracted_at_utc": "2026-11-04T19:50:51.045583+00:00",
+  "record_count": 16,
+  "years": [
+    2010,
+    2025
+  ],
+  "units": "USD per gallon, including taxes, nominal dollars",
+  "annual_average": "EIA-published simple average of weekly estimates",
+  "methodology_note": "EIA changed gasoline survey methods on May 14, 2018. Comparisons spanning that change are descriptive, not method-constant."
+}

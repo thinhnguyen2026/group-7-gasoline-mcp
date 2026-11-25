@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "rate_limit_scope": "isolated Flask test client",
+  "first_30_requests": 200,
+  "request_31": 429,
+  "mcp_live_body_bytes": 17000,
+  "mcp_live_status": 413
+}
